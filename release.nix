@@ -7,5 +7,5 @@ in {
   inherit (pkgs) wine;
   inherit (pkgs) wineStaging;
   inherit (pkgs) hydra;
-  inherit (pkgs) haskellPackages.xmonad;
+  inherit (pkgs) (haskellPackages.xmonad);
 } 
