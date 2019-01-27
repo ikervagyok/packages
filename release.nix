@@ -6,4 +6,5 @@ in {
   inherit (pkgs) zathura;
   inherit (pkgs) wine;
   inherit (pkgs) wineStaging;
+  inherit (pkgs) hydra;
 } 
