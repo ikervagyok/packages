@@ -4,7 +4,10 @@ let
   pkgs = import nixpkgs {};
 in with pkgs; {
   zathura
-  (wine { wineRelease = "staging"; wineBuild = "wineWow"; })
+  lib.overrideDerivation wine ( attrs: {
+    wineRelease = "staging";
+    wineBuild = "wineWow";
+  })
   chromium
   firefox-beta
 } 
