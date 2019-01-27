@@ -5,4 +5,5 @@ let
 in {
   inherit (pkgs) zathura;
   inherit (pkgs) wine;
+  inherit (pkgs) wineStaging;
 } 
