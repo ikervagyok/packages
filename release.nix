@@ -9,7 +9,7 @@ in {
   inherit (pkgs) zathura;
   wineStaging = wineStaging;
   wineUnstable = wineUnstable;
-  libreoffice;
+  libreoffice = libreoffice;
 # inherit (pkgs) wine;
   inherit (pkgs) wineStaging;
   inherit (pkgs) hydra;
