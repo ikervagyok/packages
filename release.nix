@@ -2,12 +2,13 @@
 
 let
   pkgs = import nixpkgs {};
-  wine = pkgs.wine.override { wineRelease = "staging"; wineBuild = "wineWow"; };
-  wine = pkgs.wine.override { wineRelease = "unstable"; wineBuild = "wineWow"; };
+  wineStaging = pkgs.wine.override { wineRelease = "staging"; wineBuild = "wineWow"; };
+  wineUnstable = pkgs.wine.override { wineRelease = "unstable"; wineBuild = "wineWow"; };
   libreoffice = pkgs.libreofficeFresh;
 in {
   inherit (pkgs) zathura;
-  wine = wine;
+  wine = wineStaging;
+  wine = wineUnstable;
   libreoffice;
 # inherit (pkgs) wine;
   inherit (pkgs) wineStaging;
