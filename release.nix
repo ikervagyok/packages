@@ -7,8 +7,8 @@ let
   libreoffice = pkgs.libreoffice-fresh;
 in {
   inherit (pkgs) zathura;
-  wineStaging = wineStaging;
-  wineUnstable = wineUnstable;
+  wineSt = wineStaging;
+  wineUn = wineUnstable;
   libreoffice = libreoffice;
 # inherit (pkgs) wine;
   inherit (pkgs) wineStaging;
