@@ -5,7 +5,7 @@ let
   wine = pkgs.wine.override { wineRelease = "staging"; winebuild = "wineWow"; };
 in {
   inherit (pkgs) zathura;
-  wine;
+  wine = wine;
 # inherit (pkgs) wine;
   inherit (pkgs) wineStaging;
   inherit (pkgs) hydra;
